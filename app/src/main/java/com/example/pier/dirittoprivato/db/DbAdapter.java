@@ -135,7 +135,7 @@ public class DbAdapter {
         return sb.toString();
     }
 
-    public void deleteErrori(){
+    public void deleteErrors(){
         db.delete(DbContract.ErroriItem.TABLE_NAME,"",null);
         dbHelper.initializeErrors(db);
     }

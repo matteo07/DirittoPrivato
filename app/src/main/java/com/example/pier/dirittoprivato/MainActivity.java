@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(getString(R.string.storico), Context.MODE_PRIVATE);
                         sharedPref.edit().clear().commit();
-                        clearHistory();
+                        dbAdapter.deleteErrors();
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -89,9 +89,5 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = a_builder.create();
         alert.setTitle("");
         alert.show();
-    }
-
-    private void clearHistory() {
-        dbAdapter.deleteErrori();
     }
 }
