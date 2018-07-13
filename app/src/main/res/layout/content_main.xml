@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grad_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pier.dirittoprivato.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:text="Inizia Quiz"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/startButton30"
+        android:background="@drawable/btn_corner"
+        android:textColor="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="deleteStas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:layout_marginTop="15dp"
+        android:id="@+id/deleteStas"
+        android:layout_below="@+id/floatingActionButton"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@color/cyan700" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="startInformationActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:id="@+id/floatingActionButton"
+        app:backgroundTint="@color/gradStart"
+        android:layout_alignTop="@+id/floatingActionButton3"
+        android:layout_toStartOf="@+id/startButton30" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/user_64"
+        android:background="@color/trasparent"
+        android:layout_marginBottom="88dp"
+        android:id="@+id/floatingActionButton3"
+        android:onClick="startProfileActivity"
+        app:backgroundTint="@color/gradStop"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/startButton30" />
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pier.dirittoprivato.MainActivity"
+    android:id="@+id/menu">
+
+    <item
+        android:visible="false"
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/profilo"
+        android:enabled="false"
+        android:checkable="false"
+        />
+</menu>

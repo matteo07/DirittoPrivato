@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pier.dirittoprivato.TestActivity">
+
+
+    <TextView
+        android:text="domanda"
+        android:layout_width="@dimen/textview_width"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Domanda"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="75dp" />
+
+    <TextView
+        android:textSize="@dimen/font_size"
+        android:text="A) R1"
+        android:layout_width="@dimen/textview_width"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rx1"
+        android:layout_height="85dp"
+        android:layout_below="@+id/Domanda"
+        android:layout_alignStart="@+id/Domanda" />
+
+
+    <TextView
+        android:textSize="@dimen/font_size"
+        android:text="B) R2"
+        android:layout_marginTop="8dp"
+        android:layout_width="@dimen/textview_width"
+        android:id="@+id/rx2"
+        android:layout_below="@+id/rx1"
+        android:layout_alignStart="@+id/rx1"
+        android:layout_height="95dp" />
+
+    <TextView
+        android:textSize="@dimen/font_size"
+        android:text="D) R4"
+        android:layout_marginTop="10dp"
+        android:layout_width="@dimen/textview_width"
+        android:id="@+id/rx4"
+        android:layout_below="@+id/rx3"
+        android:layout_alignStart="@+id/rx3"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btA" />
+
+    <TextView
+        android:textSize="@dimen/font_size"
+        android:text="C) R3"
+        android:layout_marginTop="10dp"
+        android:layout_width="@dimen/textview_width"
+        android:id="@+id/rx3"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rx2"
+        android:layout_alignStart="@+id/rx2" />
+
+    <ProgressBar
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:max="30" />
+
+    <Button
+        android:text="D"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btD"
+        android:backgroundTint="@color/teal100"
+        android:layout_below="@+id/rx4"
+        android:layout_toEndOf="@+id/btC"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:text="C"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btC"
+        android:backgroundTint="@color/teal100"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/rx4"
+        android:layout_toEndOf="@+id/btB" />
+
+    <Button
+        android:text="A"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btA"
+        android:backgroundTint="@color/teal100"
+        android:layout_marginBottom="33dp"
+        android:layout_marginStart="26dp"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignStart="@+id/rx4" />
+
+    <Button
+        android:text="B"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btB"
+        android:backgroundTint="@color/teal100"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/rx4"
+        android:layout_toEndOf="@+id/btA" />
+
+</RelativeLayout>

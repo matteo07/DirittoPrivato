@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Diritto Pubblico</string>
+    <string name="action_settings">Settings</string>
+    <string name="risultato">RISPOSTE ERRATE</string>
+    <string name="title_activity_results">Risultato Quiz</string>
+    <string name="quiz_svolti">QUIZ_SVOLTI</string>
+    <string name="storico">STORICO</string>
+    <string name="quiz_svolti_textView">QUIZ SVOLTI </string>
+    <string name="scegli_quiz">TORNA AI QUIZ</string>
+    <string name="profilo">Storico Quiz</string>
+
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
+
