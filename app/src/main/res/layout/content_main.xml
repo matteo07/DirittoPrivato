@@ -27,18 +27,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:onClick="deleteStas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_delete"
-        android:layout_marginTop="15dp"
-        android:id="@+id/deleteStas"
-        android:layout_below="@+id/floatingActionButton"
-        android:layout_centerHorizontal="true"
-        app:backgroundTint="@color/cyan700" />
 
     <android.support.design.widget.FloatingActionButton
         android:onClick="startInformationActivity"

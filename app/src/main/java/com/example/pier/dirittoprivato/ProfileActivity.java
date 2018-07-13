@@ -1,10 +1,13 @@
 package com.example.pier.dirittoprivato;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -59,5 +62,31 @@ public class ProfileActivity extends AppCompatActivity {
         int numQuiz = sharedPref.getInt(getString(R.string.quiz_svolti),0);
         quizSvolti.setText(getString(R.string.quiz_svolti_textView) + " : " + numQuiz);
 
+    }
+
+    //call deleteStats through floating
+    public void deleteStas(View view){
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(ProfileActivity.this);
+        a_builder.setMessage("Sicuro di voler cancellare le statistiche relative ai quiz svolti fino ad ora?").setCancelable(false)
+                .setPositiveButton("Sì", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(getString(R.string.storico), Context.MODE_PRIVATE);
+                        sharedPref.edit().clear().commit();
+                        dbAdapter.deleteErrors();
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                        dialog.cancel();
+
+                    }
+                });
+        AlertDialog alert = a_builder.create();
+        alert.setTitle("");
+        alert.show();
     }
 }
