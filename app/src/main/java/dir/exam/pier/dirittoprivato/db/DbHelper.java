@@ -1,4 +1,4 @@
-package com.example.pier.dirittoprivato.db;
+package dir.exam.pier.dirittoprivato.db;
 
 import android.content.Context;
 import android.database.SQLException;

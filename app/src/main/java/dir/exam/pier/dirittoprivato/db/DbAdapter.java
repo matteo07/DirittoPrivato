@@ -1,4 +1,4 @@
-package com.example.pier.dirittoprivato.db;
+package dir.exam.pier.dirittoprivato.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,13 +8,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.util.Log;
 
-import com.example.pier.dirittoprivato.Domanda;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import dir.exam.pier.dirittoprivato.Domanda;
 
 /**
  * Created by pier on 22/09/17.
@@ -106,7 +106,7 @@ public class DbAdapter {
     }
 
     public void importCSV(Context context, SQLiteDatabase db) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(context.getAssets().open("raw/ar")));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(context.getAssets().open("raw/result.csv")));
 
         String line = null;
         Scanner scanner = null;

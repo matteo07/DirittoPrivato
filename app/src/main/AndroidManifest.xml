@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pier.dirittoprivato">
+    package="dir.exam.pier.dirittoprivato">
 
     <supports-screens android:requiresSmallestWidthDp="120" />
 
@@ -11,7 +11,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="dir.exam.pier.dirittoprivato.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -22,23 +22,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestActivity"
+            android:name="dir.exam.pier.dirittoprivato.TestActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ResultsActivity"
+            android:name="dir.exam.pier.dirittoprivato.ResultsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_results"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="dir.exam.pier.dirittoprivato.ProfileActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/profilo"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".InformationActivity"
+            android:name="dir.exam.pier.dirittoprivato.InformationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_information"
             android:theme="@style/AppTheme.NoActionBar"></activity>

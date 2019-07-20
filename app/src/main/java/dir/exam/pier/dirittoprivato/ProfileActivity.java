@@ -1,4 +1,4 @@
-package com.example.pier.dirittoprivato;
+package dir.exam.pier.dirittoprivato;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -6,15 +6,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.pier.dirittoprivato.db.DbAdapter;
-
 import java.util.ArrayList;
+
+import dir.exam.pier.dirittoprivato.db.DbAdapter;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -44,8 +43,8 @@ public class ProfileActivity extends AppCompatActivity {
             int errori = dbAdapter.getErroriInCapitolo(numeroCapitolo);
             if(errori != 0) {
                 sbagliate.add(CAPITOLI[Integer.parseInt(numeroCapitolo) - 1] + "\n" + "ERRORI: " + errori);
-                Log.d("CAPITOLO " + numeroCapitolo, errori + "");
-                Log.d("TITOLO CAPITOLO ", CAPITOLI[Integer.parseInt(numeroCapitolo) - 1]);
+                //Log.d("CAPITOLO " + numeroCapitolo, errori + "");
+                //Log.d("TITOLO CAPITOLO ", CAPITOLI[Integer.parseInt(numeroCapitolo) - 1]);
             }
         }
 

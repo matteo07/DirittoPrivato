@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.pier.dirittoprivato.TestActivity">
+    tools:context="com.exam.pier.dirittoprivato.dir.exam.pier.dirittoprivato.TestActivity">
 
 
     <TextView
@@ -53,16 +53,6 @@
         android:layout_height="70dp"
         android:layout_above="@+id/btA" />
 
-    <TextView
-        android:textSize="@dimen/font_size"
-        android:text="C) R3"
-        android:layout_marginTop="10dp"
-        android:layout_width="@dimen/textview_width"
-        android:id="@+id/rx3"
-        android:layout_height="100dp"
-        android:layout_below="@+id/rx2"
-        android:layout_alignStart="@+id/rx2" />
-
     <ProgressBar
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -82,7 +72,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/btD"
-        android:backgroundTint="@color/teal100"
+        android:backgroundTint="@color/gradStart"
         android:layout_below="@+id/rx4"
         android:layout_toEndOf="@+id/btC"
         android:layout_marginStart="14dp" />
@@ -94,7 +84,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/btC"
-        android:backgroundTint="@color/teal100"
+        android:backgroundTint="@color/gradStart"
         android:layout_marginStart="18dp"
         android:layout_below="@+id/rx4"
         android:layout_toEndOf="@+id/btB" />
@@ -106,7 +96,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/btA"
-        android:backgroundTint="@color/teal100"
+        android:backgroundTint="@color/gradStart"
         android:layout_marginBottom="33dp"
         android:layout_marginStart="26dp"
         android:layout_above="@+id/progressBar"
@@ -119,9 +109,18 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/btB"
-        android:backgroundTint="@color/teal100"
+        android:backgroundTint="@color/gradStart"
         android:layout_marginStart="14dp"
         android:layout_below="@+id/rx4"
         android:layout_toEndOf="@+id/btA" />
+
+    <TextView
+        android:textSize="@dimen/font_size"
+        android:text="C) R3"
+        android:layout_width="@dimen/textview_width"
+        android:id="@+id/rx3"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rx2"
+        android:layout_alignStart="@+id/rx2" />
 
 </RelativeLayout>

@@ -1,11 +1,10 @@
-package com.example.pier.dirittoprivato;
+package dir.exam.pier.dirittoprivato;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -53,11 +52,11 @@ public class ResultsActivity extends AppCompatActivity {
             int value = sharedPref.getInt(getString(R.string.quiz_svolti),0);
             editor.putInt(getString(R.string.quiz_svolti), value + 1);
             editor.apply();
-            Log.d("INT SI", String.valueOf(value));
+            //Log.d("INT SI", String.valueOf(value));
         }else{
             editor.putInt(getString(R.string.quiz_svolti), 1);
             editor.apply();
-            Log.d("INT NO", "CIAO");
+            //Log.d("INT NO", "CIAO");
         }
     }
 

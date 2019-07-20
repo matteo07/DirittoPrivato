@@ -1,4 +1,4 @@
-package com.example.pier.dirittoprivato;
+package dir.exam.pier.dirittoprivato;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

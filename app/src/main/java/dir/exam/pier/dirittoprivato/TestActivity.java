@@ -1,22 +1,19 @@
-package com.example.pier.dirittoprivato;
+package dir.exam.pier.dirittoprivato;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.pier.dirittoprivato.db.DbAdapter;
-
 import java.util.ArrayList;
 
-import static android.content.ContentValues.TAG;
+import dir.exam.pier.dirittoprivato.db.DbAdapter;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -78,7 +75,7 @@ public class TestActivity extends AppCompatActivity {
                         .setPositiveButton("Termina", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                finish();
+                                goToResult();
                             }
                         })
                         .setNegativeButton("Prosegui", new DialogInterface.OnClickListener() {
@@ -118,7 +115,7 @@ public class TestActivity extends AppCompatActivity {
         }
         if(isNotLastQuestion()) {
 
-            Log.e(TAG,"carico domanda");
+            //Log.e(TAG,"carico domanda");
             setLayout(domande.get(index));
         } else {
             Intent intent = new Intent(this,ResultsActivity.class);
@@ -181,7 +178,12 @@ public class TestActivity extends AppCompatActivity {
         });
     }
 
-    public Chronometer getChronometer() {
-        return chronometer;
+    //termina il quiz e vai al risultato
+    public void goToResult(){
+        Intent intent = new Intent(this,ResultsActivity.class);
+        intent.putStringArrayListExtra("SBAGLIATE", sbagliate);
+        intent.putExtra("NUMERO_ERRORI",sbagliate.size());
+        startActivity(intent);
+        this.finish();
     }
 }

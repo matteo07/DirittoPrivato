@@ -1,8 +1,8 @@
-package com.example.pier.dirittoprivato;
+package dir.exam.pier.dirittoprivato;
 
 import android.content.ContentValues;
 
-import com.example.pier.dirittoprivato.db.DbContract;
+import dir.exam.pier.dirittoprivato.db.DbContract;
 
 /**
  * Created by pier on 22/09/17.
